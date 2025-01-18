@@ -5,13 +5,13 @@ type HowToPlayModalProps = {
     onClose: () => void;
 };
 
-const HowToPlayModal: React.FC<HowToPlayModalProps>  = ({ isOpen, onClose }) => {
+const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
 
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="modal-overlay absolute inset-0 bg-black opacity-50"></div>
-            <div className="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 p-4">
+            <div className="modal-container bg-black w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 p-4 border-4 border-white">
                 <div className="text-center">
                     <h2 className="text-2xl font-semibold mb-4">How to Play Ultimate Tic-Tac-Toe</h2>
                     <p className="mb-2">
